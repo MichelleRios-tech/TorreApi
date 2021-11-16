@@ -10,7 +10,11 @@ try  {
         name: response.person.name,
         picture: response.person.picture,
         strengths: response.strengths.map(strength => {
-            return {name: strength.name, proficiency: strength.proficiency}
+            return {
+                name: strength.name, 
+                proficiency: strength.proficiency, 
+                recommendations: strength.recommendations, 
+                weight: strength.weight} 
         }),
     }
     res.status(200).json(response);
