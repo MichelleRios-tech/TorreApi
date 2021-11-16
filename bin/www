@@ -1,12 +1,12 @@
 #!/usr/bin/env node
+
 /**
  * Module dependencies.
  */
 
 var app = require('../app');
-var debug = require('debug')('challengebackend:server');
+var debug = require('debug')('torreapi:server');
 var http = require('http');
-const { Console } = require('console');
 
 /**
  * Get port from environment and store in Express.
